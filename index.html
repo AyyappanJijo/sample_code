@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heads">
+            <h2 style="color: #4caf50;">Geeks for Geeks</h2>
+            <h5>Enter Your Login Crediantial</h5>
+            <div class="inputs">
+                <label>Username:</label>
+                <input type="text" placeholder="Enter your name" id="name">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" id="password">
+                <button type="submit" onclick="handleButton()">submit</button>
+                <p>
+                    Not Registered? <a href="#">Create an Account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function handleButton(){
+           let name=document.getElementById('name').value;
+           let password=document.getElementById('password').value;
+           let tempName="admin";
+           let tempPwd="admin";
+           if(name!==null && password!==null && name===tempName && password===tempPwd){
+            alert("Login Succesfull!");
+           }
+           else{
+            alert("Invalid username or password");
+           }
+        }
+    </script>
+</body>
+</html>
